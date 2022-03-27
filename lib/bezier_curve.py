@@ -32,18 +32,3 @@ def bezier_step(controll_points: list, t: float) -> np.ndarray:
 
 def lerp(a: np.ndarray, b: np.ndarray, t: float) -> np.ndarray:
     return a + ((b - a) * t)
-
-
-# def fit_bezier_curves(points_to_fit: list, step_size: float) -> Union[np.ndarray, None]:
-#     if len(controll_points) % 4 != 3 and len(controll_points) != 4:
-#         return None
-    
-#     bezier_curves = [
-#         fit_cubic_bezier_curve(points_to_fit[index: index + 4], step_size)
-#         for index in range(0, len(points_to_fit), 3)
-#     ]
-    
-#     return np.concatenate(tuple(bezier_curves))
-
-# def fit_cubic_bezier_curve(points_to_fit: list, step_size: float) -> np.ndarray:
-#     return None
